@@ -19,7 +19,7 @@ test:
   pool: 5
   username: postgres
   password: password
-  hdst: db
+  host: db
 
 production:
   adapter: postgresql

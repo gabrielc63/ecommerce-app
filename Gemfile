@@ -6,6 +6,17 @@ gem 'rails', '3.0.20'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'strong_parameters', '~> 0.2.3'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.9.1'
+  gem 'debugger'
+end
+
+group :test do
+  gem 'factory_girl_rails'
+end
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

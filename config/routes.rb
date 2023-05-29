@@ -1,4 +1,7 @@
 EcommerceApp::Application.routes.draw do
+  get "store/index"
+  root :to => 'store#index', :as => 'store'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
