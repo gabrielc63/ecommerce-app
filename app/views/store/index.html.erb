@@ -1,9 +1,15 @@
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
+
 <h1>Products</h1>
 <% @products.each do |product| %>
   <div>
     <h3><%= product.name %></h3>
     <div>
-      <span><%= product.price %></span>
+      <span class="price"><%= product.price %></span>
+      <%= link_to "Buy", new_order_path(product_id: product.id) %>
+
     </div>
   </div>
 <% end %>

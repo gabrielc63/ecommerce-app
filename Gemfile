@@ -1,12 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.20'
+ruby '1.9.3'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'rails', '3.0.20'
 
 gem 'pg'
 gem 'strong_parameters', '~> 0.2.3'
+
+gem "bcrypt-ruby", :require => "bcrypt"
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.9.1'

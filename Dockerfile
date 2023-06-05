@@ -1,4 +1,4 @@
-FROM corgibytes/ruby-1.9.3
+FROM corgibytes/ruby-1.9.3:latest
 
 # RUN rm /etc/apt/sources.list 
 # RUN echo 'deb http://deb.debian.org/debian jessie-backports main' > /etc/apt/sources.list.d/backports.list
